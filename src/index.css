@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --font-switzer: "Montserrat", "sans-serif";
+  --font-boska: "Poppins", "sans-serif";
+  --font-inknut-antiqua: "Inknut Antiqua", "serif";
+
+  /* Drop Shadow */
+  --shadow-slider: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  /* Responsive */
+}

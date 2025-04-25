@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+.featured-venues-area {
+  @apply mb-[62px] px-4 lg:px-0 mt-6;
+}
+.featured-venues {
+  @apply container mx-auto px-0 lg:px-[100px] xl:px-[248px];
+}
+.featured-venues-title {
+  @apply mb-4;
+}
+.section-title {
+  @apply font-semibold text-[20px] text-[#90998B] leading-[28px];
+}
+
+/* React Slider */
+.section-content {
+  @apply flex flex-wrap justify-between items-center gap-12;
+}
+.img_placeholder {
+  @apply mx-auto md:mx-0;
+}
+.img_placeholder .featured-venuesOne {
+  @apply hidden lg:block;
+}
+.img_placeholder .featured-venues-Two {
+  @apply block lg:hidden;
+}
+.content-area {
+  @apply pr-[50px] pl-[24px] xl:pl-0 xl:pr-[48px];
+}
+.pages {
+  @apply font-bold text-[24px] leading-[32px] tracking-[-2%] text-[#576250] mb-6;
+}
+.pages span {
+  @apply text-[#B8C1B2];
+}
+.featured-content {
+  @apply max-w-[568px] mb-[72px];
+}
+.content-title {
+  @apply font-bold text-[32px] text-[#576250] leading-[40px] tracking-[-2%] mb-1;
+}
+.subTitle {
+  @apply font-normal text-[14px] text-[#90998B] leading-[22px] mb-4;
+}
+.peraOne {
+  @apply font-normal text-[16px] text-[#8D8D8D] leading-[24px] mb-7;
+}
+.peraTwo {
+  @apply font-normal text-[16px] text-[#8D8D8D] leading-[24px];
+}
+.peraTwo a {
+  @apply font-semibold text-[#576250];
+}

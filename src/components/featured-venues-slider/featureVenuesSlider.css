@@ -1,0 +1,21 @@
+@import "tailwindcss";
+.features-area {
+}
+.features-area-container {
+  @apply relative mx-auto;
+}
+.slick-arrow {
+  @apply absolute top-[89.5%] sm:opacity-0 2xl:opacity-100 2xl:top-[81%];
+}
+.slick-prev {
+  @apply text-[#B8C1B2] z-10 text-[20px] left-[48px] 2xl:left-[44%];
+}
+.slick-next {
+  @apply text-[#B8C1B2] z-10 text-[20px] right-[48px] 2xl:right-[19%];
+}
+.slick-prev:hover {
+  @apply text-[#B8C1B2];
+}
+.slick-next:hover {
+  @apply text-[#B8C1B2];
+}

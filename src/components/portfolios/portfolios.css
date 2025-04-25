@@ -1,0 +1,26 @@
+@import "tailwindcss";
+.portfolios-area {
+  margin-bottom: 658px;
+}
+.portfolios {
+  @apply container mx-auto px-4 2xl:px-[248px];
+}
+.portfolios-title {
+  @apply mb-4;
+}
+.portfolios-title h2 {
+  @apply font-semibold text-center 2xl:text-left text-[20px] text-[#90998B] leading-[28px];
+}
+
+.portfolios-car {
+  @apply flex flex-wrap gap-[16px] justify-center 2xl:justify-between;
+}
+.card {
+  @apply rounded-[8px] bg-no-repeat bg-cover bg-center w-[504px] pt-[220px] pb-[24px] text-center;
+}
+.card p {
+  @apply font-normal text-[14px] text-[#D9D9D9] leading-[22px];
+}
+.card h3 {
+  @apply font-bold text-[24px] text-white leading-[32px] -tracking-[2%];
+}

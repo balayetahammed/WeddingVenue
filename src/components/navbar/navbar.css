@@ -1,0 +1,27 @@
+@import "tailwindcss";
+.navbar-area {
+  @apply py-[24px] fixed w-full z-50;
+}
+.navbar {
+  @apply mx-auto px-[32px] lg:px-[113px] flex justify-between items-center;
+}
+.nav-bar {
+  @apply hidden lg:block;
+}
+.nav-bar ul {
+  @apply flex items-center gap-10;
+}
+.nav-bar ul li a {
+  @apply font-normal text-[16px] leading-[24px] text-white hover:text-[#464D43] transition-all;
+}
+.social-icons {
+  @apply flex items-center gap-2.5;
+}
+.icons {
+  @apply text-white text-xl hover:text-[#464D43] transition-all;
+}
+
+/* Sticky Navbar on Scroll */
+.navbar-area.fixed {
+  @apply bg-[url(./hero.png)] bg-no-repeat bg-top bg-cover transition-all shadow-lg;
+}

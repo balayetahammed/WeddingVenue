@@ -1,0 +1,19 @@
+@import "tailwindcss";
+.footer-area {
+  @apply w-full bg-[#424242] pt-[48px] lg:pt-0 pb-[74px] lg:pb-0;
+}
+.footer {
+  @apply container mx-auto px-[32px] 2xl:px-[248px] flex flex-col lg:flex-row flex-wrap gap-[48px] lg:gap-0 justify-between lg:items-center;
+}
+.footer-logo .footer-logo-one {
+  @apply hidden lg:block;
+}
+.footer-logo .footer-logo-two {
+  @apply lg:hidden;
+}
+.nav ul {
+  @apply flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-10;
+}
+.nav ul li a {
+  @apply font-normal text-[16px] leading-[24px] text-[#8D8D8D] hover:text-white transition-all;
+}

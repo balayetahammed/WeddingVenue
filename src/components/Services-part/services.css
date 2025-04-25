@@ -1,0 +1,41 @@
+@import "tailwindcss";
+.services-area {
+  @apply pt-[42px] mb-[56px] 2xl:relative;
+}
+.services {
+  @apply container px-[0px] 2xl:px-[218px] mx-auto;
+}
+.services-content {
+  @apply bg-[#FAFAFA] rounded-[8px] relative;
+}
+.services-title {
+  @apply pt-6 pl-8 max-w-[265px] pb-[41px] 2xl:pb-[200px];
+}
+.services-title h2 {
+  @apply font-bold text-[#576250] text-[32px] leading-[40px] -tracking-[2%] mb-1;
+}
+.services-title p {
+  @apply font-normal text-[#B8C1B2] text-[16px] leading-[24px];
+}
+
+/* Services cards */
+.services-cards {
+  @apply max-w-[780px] flex flex-wrap gap-3 justify-center 2xl:justify-between 2xl:absolute 2xl:bottom-[-27px] 2xl:right-[32px] z-10 pb-[30px] 2xl:pb-0 relative;
+}
+.cards {
+  @apply w-[248px] bg-white p-3 rounded-[8px];
+}
+.cards img {
+  @apply rounded-tl-[8px];
+}
+.cards h4 {
+  @apply font-medium text-[16px] text-[#90998B] leading-[24px] mb-1.5 mt-4 text-center;
+}
+
+/* Services Shape */
+.services-shape {
+  @apply absolute top-[150px] 2xl:top-0 left-[0px] w-full z-0;
+}
+.services-shape img {
+  @apply w-full;
+}

@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+.hero-area {
+  @apply px-[26px] sm:px-[35px] md:px-[100px] 2xl:px-0 pt-[100px] md:pt-[125px] pb-[410px] bg-[url(./hero.png)] bg-no-repeat bg-bottom leading-[64px] tracking-[-2%] relative bg-cover;
+}
+.hero {
+  @apply text-center;
+}
+.hero-title {
+  @apply w-full 2xl:w-[800px] mx-auto font-normal leading-[32px] md:leading-[64px] text-[32px] md:text-[56px] text-[#464D43] mb-[35px] md:mb-2.5;
+}
+.hero-pera {
+  @apply w-full 2xl:w-[512px] mx-auto font-normal text-[16px] leading-[24px] text-[#90998B] mb-10 md:mb-[56px];
+}
+.scroll {
+  @apply text-[#90998B] text-center text-[14px];
+}
+.scroll-pera {
+  @apply text-[#90998B] text-[14px] leading-[22px] font-medium mt-0 md:mt-2;
+}

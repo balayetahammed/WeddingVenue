@@ -1,0 +1,51 @@
+@import "tailwindcss";
+.contactUs-area {
+  @apply py-[56px];
+}
+.contactUs {
+  @apply container px-4 2xl:px-[248px] mx-auto flex flex-wrap gap-[56px] justify-center 2xl:justify-between items-center;
+}
+.left-content {
+  @apply w-[480px];
+}
+.content-title {
+  @apply mb-6;
+}
+.content-title h4 {
+  @apply text-[#576250] font-bold text-[32px] leading-[40px] -tracking-[2%] mb-1;
+}
+.content-title p {
+  @apply font-normal text-[16px] text-[#B8C1B2] leading-[24px];
+}
+form {
+}
+form .title {
+  @apply font-medium text-[#576250] text-[16px] leading-[24px] mb-2;
+}
+.form-group {
+  @apply mb-2;
+}
+.form-group input {
+  @apply w-full rounded-[8px] border border-solid border-[#D9D9D9] px-4 py-2 outline-0 font-normal text-[16px] text-[#8D8D8D] leading-[24px];
+}
+.form-group textarea {
+  @apply w-full h-[162px] rounded-[8px] border border-solid border-[#D9D9D9] px-4 py-2 outline-0 font-normal text-[16px] text-[#8D8D8D] leading-[24px];
+}
+.send-btn {
+  @apply font-semibold text-[16px] text-[#fff] leading-[28px] px-[60px] py-4 bg-[#576250] rounded-[8px] cursor-pointer;
+}
+.right-content {
+  @apply max-w-[395px] text-center 2xl:text-start;
+}
+iframe {
+  @apply rounded-[8px] mb-6 w-[362px] h-[330px] 2xl:w-[393px] 2xl:h-[330px];
+}
+.right-content h3 {
+  @apply font-medium text-[16px] text-[#576250] leading-[24px] mb-2;
+}
+.right-content p {
+  @apply w-[248px] font-normal text-[16px] text-[#90998B] leading-[24px] mb-2 mx-auto 2xl:ml-0;
+}
+.contactUs-icons {
+  @apply text-[#90998B] text-[20px];
+}

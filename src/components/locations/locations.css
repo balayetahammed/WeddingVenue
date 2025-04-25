@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+.locations-area {
+  @apply mb-[48px] relative z-10;
+}
+.locations {
+  @apply container mx-auto px-[17.5px] lg:px-[100px] xl:px-[248px];
+}
+.locations-title {
+  @apply text-center mb-6;
+}
+.locations-title h2 {
+  @apply font-bold text-[32px] leading-10 tracking-[-2%] text-[#576250] mb-1;
+}
+.locations-title p {
+  @apply font-normal text-[16px] leading-[16px] text-[#B8C1B2];
+}
+.locations-view {
+  @apply flex gap-2 md:gap-4 flex-wrap justify-evenly 2xl:justify-between;
+}
+.view {
+  @apply bg-no-repeat bg-center bg-cover w-[175px] md:w-[240px] h-[100px] md:h-[153px] rounded-[8px];
+}
+.view p {
+  @apply pt-[70px] pl-2 md:pt-[120px] md:pl-[14px] font-medium text-[16px] leading-[24px] text-white;
+}
+.browse-more {
+  @apply bg-[#576250];
+}
+
+/* Shape Design */
+.shape {
+  @apply w-full h-[356px] bg-white absolute -top-[110px] -z-10 overflow-hidden;
+  clip-path: ellipse(59% 50% at 50% 50%);
+}

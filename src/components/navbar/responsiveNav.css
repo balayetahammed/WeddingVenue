@@ -1,0 +1,25 @@
+@import "tailwindcss";
+.responsiveNav {
+  @apply relative;
+}
+.responsive-navbar {
+  @apply w-[250px] p-5 bg-[#576250] absolute right-0
+  top-[100%] rounded-md flex flex-col items-center text-center;
+  animation: navbar 0.3s linear;
+}
+@keyframes navbar {
+  from {
+    opacity: 0;
+    top: 90%;
+  }
+  to {
+    opacity: 1;
+    top: 100%;
+  }
+}
+.responsive-navbar ul {
+  @apply flex gap-5 flex-col;
+}
+.responsive-navbar ul a {
+  @apply font-bold text-white hover:text-[#464D43];
+}
