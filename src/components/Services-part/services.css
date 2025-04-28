@@ -34,7 +34,7 @@
 
 /* Services Shape */
 .services-shape {
-  @apply absolute top-[150px] 2xl:top-0 left-[0px] w-full z-0;
+  @apply absolute hidden 2xl:block top-[150px] 2xl:top-0 left-[0px] w-full z-0;
 }
 .services-shape img {
   @apply w-full;

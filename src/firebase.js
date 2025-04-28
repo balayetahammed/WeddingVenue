@@ -1,39 +1,25 @@
-// import { initializeApp } from "firebase/app";
-
-// import firebase from "firebase";
-
-// let firebaseApp = firebase.initializeApp({
-//   apiKey: "AIzaSyCtqnLZ12Y6oVB94urnVgOWoNQtlvA5ocs",
-//   authDomain: "react-contact-form-c4283.firebaseapp.com",
-//   projectId: "react-contact-form-c4283",
-//   storageBucket: "react-contact-form-c4283.firebasestorage.app",
-//   messagingSenderId: "205100062557",
-//   appId: "1:205100062557:web:da866da11b60cae60afab4",
-// });
-
-// let db = firebaseApp.firestore();
-
-// export { db };
-
-// Firebase SDK থেকে প্রয়োজনীয় ফাংশন ইমপোর্ট করুন
+// Firebase SDK
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
+import { getAnalytics } from "firebase/analytics";
+import { getFirestore } from "firebase/firestore"; // Firestore import করতে হবে
 
-// Firebase কনফিগারেশন
+// Firebase Config (এখানে নতুন ক্লায়েন্টের config দিবে)
 const firebaseConfig = {
-  apiKey: "AIzaSyCtqnLZ12Y6oVB94urnVgOWoNQtlvA5ocs",
-  authDomain: "react-contact-form-c4283.firebaseapp.com",
-  projectId: "react-contact-form-c4283",
-  storageBucket: "react-contact-form-c4283.appspot.com", // এখানে `.app` ভুল ছিল
-  messagingSenderId: "205100062557",
-  appId: "1:205100062557:web:da866da11b60cae60afab4",
+  apiKey: "AIzaSyAVpAr9If5WwMZg44kTWmf2pIQk_izGgGY",
+  authDomain: "wedding-venue-39eea.firebaseapp.com",
+  projectId: "wedding-venue-39eea",
+  storageBucket: "wedding-venue-39eea.appspot.com", // এটা তোমার কোডে ভুল ছিল (".firebasestorage.app" না হয়ে ".appspot.com" হয়)
+  messagingSenderId: "478310166816",
+  appId: "1:478310166816:web:43a757cb61472efea3a745",
+  measurementId: "G-PJ5QC6EM3K",
 };
 
-// Firebase অ্যাপ ইনিশিয়ালাইজ করুন
-const firebaseApp = initializeApp(firebaseConfig);
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 
-// Firestore ডাটাবেস ইনিশিয়ালাইজ করুন
-const db = getFirestore(firebaseApp);
+// Initialize Services
+const analytics = getAnalytics(app);
+const db = getFirestore(app); // Firestore init
 
-// এক্সপোর্ট করুন যাতে অন্য ফাইল থেকে ব্যবহার করা যায়
-export { db };
+// Export
+export { analytics, db };
